@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="524b8cb3-a415-4d67-a040-0436f2aabfa6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/recipe.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/recipe.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/object.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/menu.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hf_api" beforeDir="false" afterPath="$PROJECT_DIR$/hf_api" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lastupdate.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/lastupdate.tmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/object.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/menu.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/recipe.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/recipe.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/commentsRouter_________________________Users_gianriyanto_go_src_hf_api_controllers.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/commentsRouter_________________________Users_gianriyanto_go_src_hf_api_controllers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routers/commentsRouter_controllers.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/commentsRouter_controllers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
     </list>
@@ -65,6 +60,10 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Recipe on router.go&#10;Created Models and Controllers for Recipe&#10;Connected and configured postgres database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Recipe on router.go&#10;Created Models and Controllers for Recipe&#10;Connected and configured postgres database" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
@@ -73,6 +72,10 @@
       <screen x="-250" y="-1080" width="1920" height="1080" />
     </state>
     <state x="451" y="-743" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/-250.-1080.1920.1080@-250.-1080.1920.1080" timestamp="1606888546608" />
+    <state x="245" y="-1071" key="CommitChangelistDialog2" timestamp="1606905616749">
+      <screen x="-250" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="245" y="-1071" key="CommitChangelistDialog2/0.0.1440.900/-250.-1080.1920.1080@-250.-1080.1920.1080" timestamp="1606905616749" />
     <state x="393" y="-653" width="607" height="190" key="Github.ShareDialog" timestamp="1606870919030">
       <screen x="-250" y="-1080" width="1920" height="1080" />
     </state>
@@ -85,5 +88,9 @@
       <screen x="-250" y="-1080" width="1920" height="1080" />
     </state>
     <state x="219" y="-904" key="SettingsEditor/0.0.1440.900/-250.-1080.1920.1080@-250.-1080.1920.1080" timestamp="1606870884276" />
+    <state x="310" y="-807" key="Vcs.Push.Dialog.v2" timestamp="1606905624495">
+      <screen x="-250" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="310" y="-807" key="Vcs.Push.Dialog.v2/0.0.1440.900/-250.-1080.1920.1080@-250.-1080.1920.1080" timestamp="1606905624495" />
   </component>
 </project>

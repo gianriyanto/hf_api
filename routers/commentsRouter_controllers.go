@@ -7,16 +7,7 @@ import (
 
 func init() {
 
-	beego.GlobalControllerRouter["hf_api/controllers:ObjectController"] = append(beego.GlobalControllerRouter["hf_api/controllers:ObjectController"],
-		beego.ControllerComments{
-			Method:           "Post",
-			Router:           "/",
-			AllowHTTPMethods: []string{"post"},
-			MethodParams:     param.Make(),
-			Filters:          nil,
-			Params:           nil})
-
-	beego.GlobalControllerRouter["hf_api/controllers:ObjectController"] = append(beego.GlobalControllerRouter["hf_api/controllers:ObjectController"],
+	beego.GlobalControllerRouter["hf_api/controllers:MenuController"] = append(beego.GlobalControllerRouter["hf_api/controllers:MenuController"],
 		beego.ControllerComments{
 			Method:           "GetAll",
 			Router:           "/",
@@ -25,29 +16,38 @@ func init() {
 			Filters:          nil,
 			Params:           nil})
 
-	beego.GlobalControllerRouter["hf_api/controllers:ObjectController"] = append(beego.GlobalControllerRouter["hf_api/controllers:ObjectController"],
+	beego.GlobalControllerRouter["hf_api/controllers:MenuController"] = append(beego.GlobalControllerRouter["hf_api/controllers:MenuController"],
 		beego.ControllerComments{
 			Method:           "Get",
-			Router:           "/:objectId",
+			Router:           "/:mid",
 			AllowHTTPMethods: []string{"get"},
 			MethodParams:     param.Make(),
 			Filters:          nil,
 			Params:           nil})
 
-	beego.GlobalControllerRouter["hf_api/controllers:ObjectController"] = append(beego.GlobalControllerRouter["hf_api/controllers:ObjectController"],
+	beego.GlobalControllerRouter["hf_api/controllers:MenuController"] = append(beego.GlobalControllerRouter["hf_api/controllers:MenuController"],
 		beego.ControllerComments{
 			Method:           "Put",
-			Router:           "/:objectId",
+			Router:           "/:mid",
 			AllowHTTPMethods: []string{"put"},
 			MethodParams:     param.Make(),
 			Filters:          nil,
 			Params:           nil})
 
-	beego.GlobalControllerRouter["hf_api/controllers:ObjectController"] = append(beego.GlobalControllerRouter["hf_api/controllers:ObjectController"],
+	beego.GlobalControllerRouter["hf_api/controllers:MenuController"] = append(beego.GlobalControllerRouter["hf_api/controllers:MenuController"],
 		beego.ControllerComments{
 			Method:           "Delete",
-			Router:           "/:objectId",
+			Router:           "/:mid",
 			AllowHTTPMethods: []string{"delete"},
+			MethodParams:     param.Make(),
+			Filters:          nil,
+			Params:           nil})
+
+	beego.GlobalControllerRouter["hf_api/controllers:MenuController"] = append(beego.GlobalControllerRouter["hf_api/controllers:MenuController"],
+		beego.ControllerComments{
+			Method:           "Post",
+			Router:           "/create",
+			AllowHTTPMethods: []string{"post"},
 			MethodParams:     param.Make(),
 			Filters:          nil,
 			Params:           nil})

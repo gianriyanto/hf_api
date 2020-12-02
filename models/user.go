@@ -67,7 +67,7 @@ func UpdateUser(uid int64, uu *User) (u *User, err error) {
 
 	u, err = GetUser(uid)
 	if err != nil {
-		err = errors.New("User Not Exist")
+		err = errors.New("User Does Not Exist")
 		return
 	}
 
