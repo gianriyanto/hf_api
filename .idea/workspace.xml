@@ -1,23 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="524b8cb3-a415-4d67-a040-0436f2aabfa6" name="Default Changelist" comment="" />
+    <list default="true" id="524b8cb3-a415-4d67-a040-0436f2aabfa6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/recipe.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/recipe.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hf_api" beforeDir="false" afterPath="$PROJECT_DIR$/hf_api" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lastupdate.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/lastupdate.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/commentsRouter_________________________Users_gianriyanto_go_src_hf_api_controllers.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/commentsRouter_________________________Users_gianriyanto_go_src_hf_api_controllers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/commentsRouter_controllers.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/commentsRouter_controllers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.13.5/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/main.go" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1l3adZr9jBaFbgoD65LPkjgMyJa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
@@ -29,10 +62,25 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
+    <state x="451" y="-743" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606888546608">
+      <screen x="-250" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="451" y="-743" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/-250.-1080.1920.1080@-250.-1080.1920.1080" timestamp="1606888546608" />
+    <state x="393" y="-653" width="607" height="190" key="Github.ShareDialog" timestamp="1606870919030">
+      <screen x="-250" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="393" y="-653" width="607" height="190" key="Github.ShareDialog/0.0.1440.900/-250.-1080.1920.1080@-250.-1080.1920.1080" timestamp="1606870919030" />
+    <state x="348" y="-913" key="Github.UntrackedFilesDialog" timestamp="1606870989192">
+      <screen x="-250" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="348" y="-913" key="Github.UntrackedFilesDialog/0.0.1440.900/-250.-1080.1920.1080@-250.-1080.1920.1080" timestamp="1606870989192" />
     <state x="219" y="-904" key="SettingsEditor" timestamp="1606870884276">
       <screen x="-250" y="-1080" width="1920" height="1080" />
     </state>
