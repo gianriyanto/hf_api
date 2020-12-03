@@ -15,7 +15,7 @@ For the most part, this task was a new and challenging learning experience for m
 
 - E2E test using Postman
 
-The project still has much room for design/architecture requiremnets as well as several missing requirements that are incomplete at the given timeframe. 
+These are my achievement at the given timeframe. Several requirements remain incomplete, soultion design has much room for improvement, and more comrpehensive testing could be implemented. Nonetheless, my progress and attempt at this task was a challenging yet valuable learning opportunity for me. Check it out.
 
 ### Description
 This is a take home task I attempted for Hello Fresh's Software Engineering Intern role. The context, description, and requirements are detailed [here](https://github.com/hello-abhishek/hf-take-home-programming-challenges/blob/main/SOFTWARE-ENGINEER.md)
