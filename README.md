@@ -22,3 +22,13 @@ go get github.com/beego/bee
 ```bash
 bee run
 ```
+
+## To Generate Swagger Documentation
+To auto generate documentation of the API, use this command:
+```bash
+bee run -gendoc=true -downdoc=true
+```
+Now go to the browser
+```
+http://localhost:8080/swagger/
+```
