@@ -11,12 +11,12 @@ type Recipe struct {
 	RecipeName      string           `orm:"column(recipename)" json:"recipename"`
 	Instruction     string           `orm:"column(instruction)" json:"instruction"`
 	Ratings         string           `orm:"column(ratings)" json:"ratings"`
-	Nutritionalinfo *Nutritionalinfo `orm:"rel(one)" json:"nutritionalinfo"` // OneToOne relation
+	NutritionalInfo *NutritionalInfo `orm:"rel(one)" json:"nutritionalInfo"` // OneToOne relation
 	//Menu     		 *Menu      	   `orm:"null;rel(fk)" json:"menu"`			// RelForeignKey relation
 	//Ingredients    []*Ingredient      `orm:"reverse(m2m)"` 				    // ManyToMany relation: A recipe have multiple ingredients
 }
 
-type Nutritionalinfo struct {
+type NutritionalInfo struct {
 	Id      int64   `orm:"pk;auto;column(id)" json:"id"`
 	Carbs   string  `orm:"column(carbs)" json:"carbs"`
 	Protein string  `orm:"column(protein)" json:"protein"`
@@ -27,7 +27,7 @@ type Nutritionalinfo struct {
 func AddRecipe(r Recipe) int64 {
 	o := orm.NewOrm()
 
-	_, err := o.Insert(r.Nutritionalinfo)
+	_, err := o.Insert(r.NutritionalInfo)
 	if err != nil {
 		return 0
 	}
@@ -79,17 +79,17 @@ func UpdateRecipe(rid int64, rr *Recipe) (r *Recipe, err error) {
 	if rr.Instruction != "" {
 		r.Instruction = rr.Instruction
 	}
-	if rr.Nutritionalinfo.Carbs != "" {
-		r.Nutritionalinfo.Carbs = rr.Nutritionalinfo.Carbs
+	if rr.NutritionalInfo.Carbs != "" {
+		r.NutritionalInfo.Carbs = rr.NutritionalInfo.Carbs
 	}
-	if rr.Nutritionalinfo.Protein != "" {
-		r.Nutritionalinfo.Protein = rr.Nutritionalinfo.Protein
+	if rr.NutritionalInfo.Protein != "" {
+		r.NutritionalInfo.Protein = rr.NutritionalInfo.Protein
 	}
-	if rr.Nutritionalinfo.Fat != "" {
-		r.Nutritionalinfo.Fat = rr.Nutritionalinfo.Fat
+	if rr.NutritionalInfo.Fat != "" {
+		r.NutritionalInfo.Fat = rr.NutritionalInfo.Fat
 	}
 
-	if _, err = o.Update(r.Nutritionalinfo); err == nil {
+	if _, err = o.Update(r.NutritionalInfo); err == nil {
 		return
 	}
 	if _, err = o.Update(r); err == nil {
