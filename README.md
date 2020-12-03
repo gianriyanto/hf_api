@@ -1,7 +1,7 @@
 # Hello Fresh Take Home Programming Challenge.
 by Gian Riyanto
 
-For the most part, this task was a new and challenging learning experience for me. I had the opportunity to tinker with a new programming language, web framework, and various other tools, as well as explored new back-end focused concepts and design architectures. Despite the learning curve and some technical issues that cam e across, I was able to complete the following achievements outlined below:
+For the most part, this task was a new and challenging learning experience for me. I had the opportunity to tinker with a new programming language, web framework, and various other tools, as well as explored new back-end focused concepts and design architectures. I was able to complete the following:
 
 - Planned and designed the desired data model.
 
@@ -17,7 +17,7 @@ For the most part, this task was a new and challenging learning experience for m
 
 These are my achievement at the given timeframe. Several requirements remain incomplete, solution design has much room for improvement, and more comprehensive testing should be implemented.
 
-To be done:
+To Be Done:
 
 - Connect data models according to the planned data model relationship (see [DESIGN.md](https://github.com/gianriyanto/hf_api/blob/master/DESIGN.md))
 
