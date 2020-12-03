@@ -1,21 +1,29 @@
 # Hello Fresh Take Home Programming Challenge.
 by Gian Riyanto
 
-For the most part, this task was a new and challenging learning experience for me. I had the chance to tinker with a new programming language, web framework, and various other tools, as well as explored new back-end focused concepts and design architectures. Despite the learning curve and some technical issues that arise, I was able to complete part of the requirement outlined below:
+For the most part, this task was a new and challenging learning experience for me. I had the opportunity to tinker with a new programming language, web framework, and various other tools, as well as explored new back-end focused concepts and design architectures. Despite the learning curve and some technical issues that cam e across, I was able to complete the following achievements outlined below:
 
 - Planned and designed the desired data model.
 
-- Created an ORM and connected postgres database.
+- Created a ORM with beego and connected postgres database.
 
-- Models.go and Controller.go for Menu, Recipe, User.
+- Routers, Models.go and Controller.go for Menu, Recipe, User, Ingredient.
 
-- Create REST APIs for Menu, Recipe, User
+- Create REST APIs for Menu, Recipe, User, Ingredient using an MVC architecture.
 
-- CRUD operations for Menu, Recipe, User
+- CRUD operations for Menu, Recipe, User, Ingredient.
 
-- E2E test using Postman
+- E2E test with Postman.
 
-The project still has much room for design/architecture requiremnets as well as several missing requirements that are incomplete at the given timeframe. 
+These are my achievement at the given timeframe. Several requirements remain incomplete, solution design has much room for improvement, and more comrpehensive testing could be implemented.
+
+To be done:
+
+- Connect data models according to planned relationship (see [DESIGN.md](https://github.com/gianriyanto/hf_api/blob/master/DESIGN.md))
+
+- Create Unit tests and test runner.
+
+Nonetheless, the current progres at this task was a challenging yet valuable learning experience. Check it out. 
 
 ### Description
 This is a take home task I attempted for Hello Fresh's Software Engineering Intern role. The context, description, and requirements are detailed [here](https://github.com/hello-abhishek/hf-take-home-programming-challenges/blob/main/SOFTWARE-ENGINEER.md)
