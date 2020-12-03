@@ -7,15 +7,23 @@ For the most part, this task was a new and challenging learning experience for m
 
 - Created an ORM and connected postgres database.
 
-- Models.go and Controller.go for Menu, Recipe, User.
+- Models.go and Controller.go for Menu, Recipe, User, Ingredient.
 
-- Create REST APIs for Menu, Recipe, User
+- Create REST APIs for Menu, Recipe, User.
 
-- CRUD operations for Menu, Recipe, User
+- CRUD operations for Menu, Recipe, User.
 
-- E2E test using Postman
+- E2E test using Postman.
 
-These are my achievement at the given timeframe. Several requirements remain incomplete, soultion design has much room for improvement, and more comrpehensive testing could be implemented. Nonetheless, my progress and attempt at this task was a challenging yet valuable learning opportunity for me. Check it out.
+These are my achievement at the given timeframe. Several requirements remain incomplete, solution design has much room for improvement, and more comrpehensive testing could be implemented.
+
+To be done:
+
+- Connect data models according to planned relationship (see [DESIGN.md](https://github.com/gianriyanto/hf_api/blob/master/DESIGN.md))
+
+- Create Unit tests and test runner.
+
+Nonetheless, the current progres at this task was a challenging yet valuable learning experience. Check it out. 
 
 ### Description
 This is a take home task I attempted for Hello Fresh's Software Engineering Intern role. The context, description, and requirements are detailed [here](https://github.com/hello-abhishek/hf-take-home-programming-challenges/blob/main/SOFTWARE-ENGINEER.md)
