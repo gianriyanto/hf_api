@@ -8,9 +8,9 @@ Tech Stack Used: Golang (Language), Beego v1.12.3 (Framework and ORM), Postgres 
 
 ## Installation
 
-[install go](https://golang.org/doc/install)
+Install [go](https://golang.org/doc/install)
 
-[install beego](https://beego.me/docs/install/)
+install [beego](https://beego.me/docs/install/)
 
 ```bash
 go get github.com/astaxie/beego
