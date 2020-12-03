@@ -9,6 +9,7 @@ import (
 type Ingredient struct {
 	Id   int64  `orm:"pk;auto;column(id)" json:"id"`
 	Name string `orm:"column(name)" json:"name"`
+	//Recipe    *Recipe     `orm:"null;rel(fk)" json:"recipe"`		// ManyToMany relation: A ingredients can exist in have multiple recipes
 }
 
 func AddIngredient(i Ingredient) int64 {

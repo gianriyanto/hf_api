@@ -12,6 +12,8 @@ type Recipe struct {
 	Instruction     string           `orm:"column(instruction)" json:"instruction"`
 	Ratings         string           `orm:"column(ratings)" json:"ratings"`
 	Nutritionalinfo *Nutritionalinfo `orm:"rel(one)" json:"nutritionalinfo"` // OneToOne relation
+	//Menu     		 *Menu      	   `orm:"null;rel(fk)" json:"menu"`			// RelForeignKey relation
+	//Ingredients    []*Ingredient      `orm:"reverse(m2m)"` 				    // ManyToMany relation: A recipe have multiple ingredients
 }
 
 type Nutritionalinfo struct {

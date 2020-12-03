@@ -10,6 +10,7 @@ type Menu struct {
 	Id      int64  `orm:"pk;auto;column(id)" json:"id"`
 	Name    string `orm:"column(name)" json:"name"`
 	WeekNum int    `orm:"column(weeknum)" json:"weeknum"`
+	//Recipes   []*Recipe  `orm:"reverse(many)"` 		//A menu have multiple recipes
 }
 
 func AddMenu(m Menu) int64 {
