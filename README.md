@@ -15,11 +15,11 @@ For the most part, this task was a new and challenging learning experience for m
 
 - E2E test with Postman.
 
-These are my achievement at the given timeframe. Several requirements remain incomplete, solution design has much room for improvement, and more comrpehensive testing could be implemented.
+These are my achievement at the given timeframe. Several requirements remain incomplete, solution design has much room for improvement, and more comprehensive testing should be implemented.
 
 To be done:
 
-- Connect data models according to planned relationship (see [DESIGN.md](https://github.com/gianriyanto/hf_api/blob/master/DESIGN.md))
+- Connect data models according to the planned data model relationship (see [DESIGN.md](https://github.com/gianriyanto/hf_api/blob/master/DESIGN.md))
 
 - Create Unit tests and test runner.
 
