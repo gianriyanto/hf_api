@@ -19,5 +19,5 @@ Beego, a RESTful web framework is used in the building of this API following the
 ## Diagram
 This is the intended data model schema, detailing entity attributes and relationship.
 
-![alt text](https://github.com/gianriyanto/hf_api/data_mode_diagram.jpge?raw=true)
+![](data_model_diagram.jpeg)
 
