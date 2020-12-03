@@ -30,6 +30,7 @@ func main() {
 		new(models.Profile),
 		new(models.Recipe),
 		new(models.Nutritionalinfo),
+		new(models.Ingredient),
 		new(models.Menu))
 	err = orm.RunSyncdb("default", false, true)
 	if err != nil {

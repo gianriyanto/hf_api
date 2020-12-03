@@ -31,13 +31,13 @@ func (m *MenuController) Post() {
 // @Success 200 {object} models.Menu
 // @router / [get]
 func (m *MenuController) GetAll() {
-	users := models.GetAllMenus()
-	m.Data["json"] = users
+	menus := models.GetAllMenus()
+	m.Data["json"] = menus
 	m.ServeJSON()
 }
 
 // @Title Get
-// @Description get user by mid
+// @Description get menu by mid
 // @Param	mid		path 	string	true		"The key for staticblock"
 // @Success 200 {object} models.Menu
 // @Failure 403 :mid is empty

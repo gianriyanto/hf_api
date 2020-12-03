@@ -9,7 +9,7 @@ import (
 type Recipe struct {
 	Id              int64            `orm:"pk;auto;column(id)" json:"id"`
 	RecipeName      string           `orm:"column(recipename)" json:"recipename"`
-	Instruction     string           `orm:"column(instruction)" json:"instsruction"`
+	Instruction     string           `orm:"column(instruction)" json:"instruction"`
 	Ratings         string           `orm:"column(ratings)" json:"ratings"`
 	Nutritionalinfo *Nutritionalinfo `orm:"rel(one)" json:"nutritionalinfo"` // OneToOne relation
 }

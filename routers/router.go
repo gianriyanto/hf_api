@@ -31,6 +31,13 @@ func init() {
 			),
 		),
 
+		// /v1/ingredient
+		beego.NSNamespace("/ingredient",
+			beego.NSInclude(
+				&controllers.IngredientController{},
+			),
+		),
+
 		// /v1/menu
 		beego.NSNamespace("/menu",
 			beego.NSInclude(

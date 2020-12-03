@@ -1,0 +1,693 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "beego Test API",
+        "description": "beego has a very cool tools to autogenerate documents for your API",
+        "version": "1.0.0",
+        "termsOfService": "http://beego.me/",
+        "contact": {
+            "email": "astaxie@gmail.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    "basePath": "/v1",
+    "paths": {
+        "/ingredient/": {
+            "get": {
+                "tags": [
+                    "ingredient"
+                ],
+                "description": "get all Ingredients",
+                "operationId": "IngredientController.GetIngredient",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Ingredient"
+                        }
+                    }
+                }
+            }
+        },
+        "/ingredient/create": {
+            "post": {
+                "tags": [
+                    "ingredient"
+                ],
+                "description": "create ingredients",
+                "operationId": "IngredientController.CreateIngredient",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "body for ingredient content",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.Ingredient"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{int} models.Ingredient.Id"
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        },
+        "/ingredient/{iid}": {
+            "get": {
+                "tags": [
+                    "ingredient"
+                ],
+                "description": "get user by iid",
+                "operationId": "IngredientController.Get",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "iid",
+                        "description": "The key for staticblock",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Ingredient"
+                        }
+                    },
+                    "403": {
+                        "description": ":iid is empty"
+                    }
+                }
+            }
+        },
+        "/ingredient/{mid}": {
+            "put": {
+                "tags": [
+                    "ingredient"
+                ],
+                "description": "update the ingredient",
+                "operationId": "IngredientController.Update",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "mid",
+                        "description": "The mid you want to update",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "body for menu content",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.Menu"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Menu"
+                        }
+                    },
+                    "403": {
+                        "description": ":mid is not int"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "ingredient"
+                ],
+                "description": "delete the menu",
+                "operationId": "IngredientController.Delete",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "mid",
+                        "description": "The mid you want to delete",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{string} delete success!"
+                    },
+                    "403": {
+                        "description": "mid is empty"
+                    }
+                }
+            }
+        },
+        "/menu/": {
+            "get": {
+                "tags": [
+                    "menu"
+                ],
+                "description": "get all Menus",
+                "operationId": "MenuController.GetMenu",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Menu"
+                        }
+                    }
+                }
+            }
+        },
+        "/menu/create": {
+            "post": {
+                "tags": [
+                    "menu"
+                ],
+                "description": "create menus",
+                "operationId": "MenuController.CreateMenu",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "body for menu content",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.Menu"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{int} models.Menu.Id"
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        },
+        "/menu/{mid}": {
+            "get": {
+                "tags": [
+                    "menu"
+                ],
+                "description": "get menu by mid",
+                "operationId": "MenuController.Get",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "mid",
+                        "description": "The key for staticblock",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Menu"
+                        }
+                    },
+                    "403": {
+                        "description": ":mid is empty"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "menu"
+                ],
+                "description": "update the menu",
+                "operationId": "MenuController.Update",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "mid",
+                        "description": "The mid you want to update",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "body for menu content",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.Menu"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Menu"
+                        }
+                    },
+                    "403": {
+                        "description": ":mid is not int"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "menu"
+                ],
+                "description": "delete the menu",
+                "operationId": "MenuController.Delete",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "mid",
+                        "description": "The mid you want to delete",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{string} delete success!"
+                    },
+                    "403": {
+                        "description": "mid is empty"
+                    }
+                }
+            }
+        },
+        "/recipe/": {
+            "get": {
+                "tags": [
+                    "recipe"
+                ],
+                "description": "get all Recipe",
+                "operationId": "RecipeController.GetAll",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Recipe"
+                        }
+                    }
+                }
+            }
+        },
+        "/recipe/create": {
+            "post": {
+                "tags": [
+                    "recipe"
+                ],
+                "description": "create recipes",
+                "operationId": "RecipeController.CreateRecipe",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "body for recipe content",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.Recipe"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{int} models.Recipe.Id"
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        },
+        "/recipe/{rid}": {
+            "get": {
+                "tags": [
+                    "recipe"
+                ],
+                "description": "get recipe by rid",
+                "operationId": "RecipeController.Get",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "rid",
+                        "description": "The key for staticblock",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Recipe"
+                        }
+                    },
+                    "403": {
+                        "description": ":rid is empty"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "recipe"
+                ],
+                "description": "update the recipe",
+                "operationId": "RecipeController.Update",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "rid",
+                        "description": "The rid you want to update",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "body for recipe content",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.Recipe"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Recipe"
+                        }
+                    },
+                    "403": {
+                        "description": ":rid is not int"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "recipe"
+                ],
+                "description": "delete the recipe",
+                "operationId": "RecipeController.Delete",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "rid",
+                        "description": "The rid you want to delete",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{string} delete success!"
+                    },
+                    "403": {
+                        "description": "rid is empty"
+                    }
+                }
+            }
+        },
+        "/user/": {
+            "get": {
+                "tags": [
+                    "user"
+                ],
+                "description": "get all Users",
+                "operationId": "UserController.GetAll",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/create": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "create users",
+                "operationId": "UserController.CreateUser",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "body for user content",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{int} models.User.Id"
+                    },
+                    "403": {
+                        "description": "body is empty"
+                    }
+                }
+            }
+        },
+        "/user/{uid}": {
+            "get": {
+                "tags": [
+                    "user"
+                ],
+                "description": "get user by uid",
+                "operationId": "UserController.Get",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "uid",
+                        "description": "The key for staticblock",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "403": {
+                        "description": ":uid is empty"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "user"
+                ],
+                "description": "update the user",
+                "operationId": "UserController.Update",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "uid",
+                        "description": "The uid you want to update",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "body for user content",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "403": {
+                        "description": ":uid is not int"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "user"
+                ],
+                "description": "delete the user",
+                "operationId": "UserController.Delete",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "uid",
+                        "description": "The uid you want to delete",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{string} delete success!"
+                    },
+                    "403": {
+                        "description": "uid is empty"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "models.Ingredient": {
+            "title": "Ingredient",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "name": {
+                    "type": "string"
+                }
+            }
+        },
+        "models.Menu": {
+            "title": "Menu",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "weeknum": {
+                    "type": "integer",
+                    "format": "int64"
+                }
+            }
+        },
+        "models.Nutritionalinfo": {
+            "title": "Nutritionalinfo",
+            "type": "object",
+            "properties": {
+                "carbs": {
+                    "type": "string"
+                },
+                "fat": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "protein": {
+                    "type": "string"
+                }
+            }
+        },
+        "models.Profile": {
+            "title": "Profile",
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+                "age": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer",
+                    "format": "int64"
+                }
+            }
+        },
+        "models.Recipe": {
+            "title": "Recipe",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "ingredients": {
+                    "type": "string"
+                },
+                "instruction": {
+                    "type": "string"
+                },
+                "nutritionalinfo": {
+                    "$ref": "#/definitions/models.Nutritionalinfo"
+                },
+                "ratings": {
+                    "type": "string"
+                },
+                "recipename": {
+                    "type": "string"
+                }
+            }
+        },
+        "models.User": {
+            "title": "User",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "profile": {
+                    "$ref": "#/definitions/models.Profile"
+                },
+                "username": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "user",
+            "description": "Operations about Users\n"
+        },
+        {
+            "name": "recipe",
+            "description": "Operations about Recipe\n"
+        },
+        {
+            "name": "ingredient",
+            "description": "Operations about Ingredients\n"
+        },
+        {
+            "name": "menu",
+            "description": "Operations about object\n"
+        }
+    ]
+}
