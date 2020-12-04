@@ -15,7 +15,7 @@ For the most part, this task was a new and challenging learning experience for m
 
 - E2E test with Postman.
 
-These are my achievement at the given timeframe. Several requirements remain incomplete, solution design has much room for improvement, and more comprehensive testing should be implemented.
+Listed are achievement at the given timeframe. Several requirements remain incomplete, solution design has a lot of room for improvement, and more comprehensive testing should be implemented.
 
 To Be Done:
 
