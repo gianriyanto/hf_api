@@ -19,7 +19,7 @@ Listed are achievement at the given timeframe. Several requirements remain incom
 
 To Be Done:
 
-- Connect data models according to the planned data model relationship (see [DESIGN.md](https://github.com/gianriyanto/hf_api/blob/master/DESIGN.md))
+- Finish connecting data models (particularly the 1:M and M:M) according to the designed entity relationship diagram (see [DESIGN.md](https://github.com/gianriyanto/hf_api/blob/master/DESIGN.md))
 
 - Create Unit tests and test runner.
 
