@@ -1,6 +1,12 @@
 # Hello Fresh Take Home Programming Challenge.
 by Gian Riyanto
 
+### Description
+This is a take home task I attempted for Hello Fresh's Software Engineering Intern role. The context, description, and requirements are detailed [here](https://github.com/hello-abhishek/hf-take-home-programming-challenges/blob/main/SOFTWARE-ENGINEER.md)
+
+Tech Stack Used: Golang (Language), Beego v1.12.3 Web Framework and ORM, Postgres (Database), Postman (E2E Test), Postico (SQL Browser)
+
+### Remarks
 For the most part, this task was a new and challenging learning experience for me. I had the opportunity to tinker with a new programming language, web framework, and various other tools, as well as explored new back-end focused concepts and design architectures. I was able to complete the following:
 
 - Planned and designed the desired data model.
@@ -25,13 +31,8 @@ To Be Done:
 
 Nonetheless, the current progres at this task was a challenging yet valuable learning experience. Check it out. 
 
-### Description
-This is a take home task I attempted for Hello Fresh's Software Engineering Intern role. The context, description, and requirements are detailed [here](https://github.com/hello-abhishek/hf-take-home-programming-challenges/blob/main/SOFTWARE-ENGINEER.md)
-
-Tech Stack Used: Golang (Language), Beego v1.12.3 Web Framework and ORM, Postgres (Database), Postman (E2E Test), Postico (SQL Browser)
 
 ## Setup
-
 Install [go](https://golang.org/doc/install)
 
 install [beego](https://beego.me/docs/install/)
