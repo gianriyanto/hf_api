@@ -29,7 +29,7 @@ func main() {
 	orm.RegisterModel(new(models.User),
 		new(models.Profile),
 		new(models.Recipe),
-		new(models.Nutritionalinfo),
+		new(models.NutritionalInfo),
 		new(models.Ingredient),
 		new(models.Menu))
 	err = orm.RunSyncdb("default", false, true)
